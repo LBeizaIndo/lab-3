@@ -13,5 +13,11 @@
   <body>
     <%= render partial: 'layouts/navbar' %>
     <%= yield %>
+    <footer class="footer mt-auto py-3 bg-light">
+      <div class="container">
+        <span class="text-muted">© <%= Time.now.year %> Y.LuisBeiza </span>
+        <span class="float-end"> this links on my social medias </span>
+      </div>
+    </footer>
   </body>
 </html>
