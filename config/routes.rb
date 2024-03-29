@@ -7,7 +7,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   #root "posts#index"
-  root 'static_pages#home'
-  get '/about', to: 'static_pages#about'
-  get '/contact', to: 'static_pages#contact'
+
+  get 'static_pages/home', to: 'static_pages#home'
+  get 'static_pages/about', to: 'static_pages#about'
+  get 'static_pages/contact', to: 'static_pages#contact'
+  root "static_pages#home"
 end
